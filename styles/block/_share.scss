@@ -6,6 +6,11 @@
 
   &__item {
     margin-right: 24px;
+    flex-shrink: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
     
     @include mixin.media('tablet') {
       margin-right: 28px;
