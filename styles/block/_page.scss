@@ -10,7 +10,20 @@
   -webkit-text-size-adjust: 100%;
 
   &__body {    
+    display: flex;
+    flex-direction: column;
     height: 100%;
     margin: 0;
+    padding-top: 100px;
+  }
+
+  &__header {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__content {
+    flex-grow: 1;
   }
 }
