@@ -2,23 +2,7 @@
 @use '../font';
 
 .share {
-  
-  &__title {
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: font.$weight-normal;
-    margin-top: 0;
-    margin-bottom: 10px;
-    
-    @include mixin.media('tablet') {
-      font-size: 20px;
-      line-height: 1.5;
-    }
-  }
-
-  &__list {
-    display: flex;
-  }
+  display: flex;
 
   &__item {
     margin-right: 24px;

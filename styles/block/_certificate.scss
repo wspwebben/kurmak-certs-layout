@@ -2,11 +2,23 @@
 @use '../font';
 
 .certificate {
+
+  &__wrapper {
+    @include mixin.media('desktop') {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
   &__description {
     margin-bottom: 41px;
-
+    
     @include mixin.media('tablet') {
       margin-bottom: 59px;
+    }
+
+    @include mixin.media('desktop') {
+      margin-right: 2em;
     }
   }
 
@@ -39,7 +51,7 @@
     display: block;
     margin-bottom: 30px;
     font-family: font.$accent;
-    font-size: 40px;
+    font-size: 38px;
     line-height: 1;
     font-weight: font.$weight-normal;
     letter-spacing: -0.01em;
@@ -58,19 +70,43 @@
     line-height: 1.16;
     font-weight: font.$weight-semibold;
     white-space: pre-line;
-
+    
     @include mixin.media('tablet') {
       font-size: 40px;
       line-height: 1.1;
     }
   }
-
+  
   &__text {
     margin: 0;
+    font-weight: font.$weight-normal;
     
     @include mixin.media('tablet') {
       font-size: 20px;
       line-height: 1.5;
     }
+  }
+
+  &__showcase {
+
+    @include mixin.media('desktop') {
+      padding-top: 10px;
+    }
+  }
+  
+  &__image {
+    margin-bottom: 50px;
+    
+    @include mixin.media('tablet') {
+      margin-bottom: 64px;
+    }
+
+    @include mixin.media('desktop') {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__share {
+    margin-top: 10px;
   }
 }

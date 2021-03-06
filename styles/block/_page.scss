@@ -24,6 +24,10 @@
       padding-top: 158px;
       padding-bottom: 192px;
     }
+
+    @include mixin.media('desktop') {
+      padding-bottom: 175px;
+    }
   }
 
   &__header {
@@ -35,13 +39,5 @@
 
   &__content {
     flex-grow: 1;
-  }
-
-  &__certificate {
-    margin-bottom: 50px;
-    
-    @include mixin.media('tablet') {
-      padding-top: 64px;
-    }
   }
 }
