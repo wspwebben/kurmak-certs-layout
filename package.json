@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "parcel index.html",
+    "serve": "parcel index.html",
     "build": "parcel build index.html --public-url /kurmak-certs-layout"
   },
   "repository": {
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/wspwebben/kurmak-certs-layout#readme",
   "dependencies": {},
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-nightly.620",
     "parcel": "^2.0.0-beta.1",
     "sass": "^1.32.8"
   }
