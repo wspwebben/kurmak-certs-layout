@@ -1,3 +1,9 @@
+@use '../mixin';
+
 .header {
   padding: 32px 0;
+
+  @include mixin.media('tablet') {
+    padding: 47px 0;
+  }
 }

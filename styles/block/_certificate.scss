@@ -1,15 +1,40 @@
+@use '../mixin';
 @use '../font';
 
 .certificate {
   &__description {
     margin-bottom: 41px;
+
+    @include mixin.media('tablet') {
+      margin-bottom: 59px;
+    }
   }
 
   &__title-wrapper {
     margin-top: 0;
-    margin-bottom: 30px;
-  }
+    margin-bottom: 15px;
 
+    @include mixin.media('tablet') {
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__pretitle {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: font.$weight-normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    @include mixin.media('tablet') {
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 1.8;
+    }
+  }
+  
   &__title {
     display: block;
     margin-bottom: 30px;
@@ -20,6 +45,11 @@
     letter-spacing: -0.01em;
     text-transform: uppercase;
     white-space: pre-line;
+
+    @include mixin.media('tablet') {
+      margin-bottom: 59px;
+      font-size: 90px;
+    }
   }
   
   &__subtitle {
@@ -28,17 +58,19 @@
     line-height: 1.16;
     font-weight: font.$weight-semibold;
     white-space: pre-line;
-  }
 
-  &__pretitle {
-    font-weight: font.$weight-normal;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 1.2;
-    margin-bottom: 15px;
+    @include mixin.media('tablet') {
+      font-size: 40px;
+      line-height: 1.1;
+    }
   }
 
   &__text {
     margin: 0;
+    
+    @include mixin.media('tablet') {
+      font-size: 20px;
+      line-height: 1.5;
+    }
   }
 }

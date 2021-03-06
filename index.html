@@ -16,7 +16,12 @@
   <header class="page__header header">
     <div class="container">
       <a href="/">
-        <img src="./images/logo.svg" alt="kurmak.info" />
+        <img
+          src="images/logo.svg"
+          srcset="images/logo.svg 91w, images/logo-big.svg 113w"
+          sizes="(min-width: 768px) 113, 91px"
+          alt="kurmak.info"
+        />
       </a>
     </div>
   </header>
@@ -41,7 +46,12 @@
           <p class="certificate__text">5 weeks of study, 8 hours per week</p>
         </div>
 
-        <img src="./images/certificate.png" alt="Sergey Shiryaev's certificate" />
+        <img
+          src="images/certificate.png"
+          srcset="images/certificate.png 280w, images/certificate-big.png 384w"
+          sizes="(min-width: 768px) 384px, 280px"
+          alt="Sergey Shiryaev's certificate"
+        />
       </div>
     </section>
 
@@ -52,17 +62,17 @@
         <ul class="share__list">
           <li class="share__item">
             <a href="#" aria-label="Share with Email">
-              <img src="./images/icons/email.svg" width="48" height="48" alt="">
+              <img class="share__icon" src="./images/icons/email.svg" width="48" height="48" alt="">
             </a>
           </li>
           <li class="share__item">
             <a href="#" aria-label="Share with Telegram">
-              <img src="./images/icons/telegram.svg" width="48" height="48" alt="">
+              <img class="share__icon" src="./images/icons/telegram.svg" width="48" height="48" alt="">
             </a>
           </li>
           <li class="share__item">
             <a href="#" aria-label="Share with Facebook">
-              <img src="./images/icons/facebook.svg" width="48" height="48" alt="">
+              <img class="share__icon" src="./images/icons/facebook.svg" width="48" height="48" alt="">
             </a>
           </li>
         </ul>

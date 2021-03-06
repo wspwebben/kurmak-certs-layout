@@ -1,3 +1,4 @@
+@use '../mixin';
 @use '../font';
 
 .share {
@@ -8,6 +9,11 @@
     font-weight: font.$weight-normal;
     margin-top: 0;
     margin-bottom: 10px;
+    
+    @include mixin.media('tablet') {
+      font-size: 20px;
+      line-height: 1.5;
+    }
   }
 
   &__list {
@@ -16,5 +22,14 @@
 
   &__item {
     margin-right: 24px;
+    
+    @include mixin.media('tablet') {
+      margin-right: 28px;
+    }
+  }
+
+  &__icon {
+    width: 56px;
+    height: 56px;
   }
 }
