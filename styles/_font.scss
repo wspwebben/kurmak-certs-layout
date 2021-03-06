@@ -1,7 +1,10 @@
-$family: 'PT Sans';
+$epilogue: 'Epilogue', sans-serif; 
+$inter: 'Inter', sans-serif;
+$primary: $inter;
+$accent: $epilogue;
 
 $weight-normal: 400;
-$weight-bold: 700;
+$weight-semibold: 600;
 
 $style-normal: 'normal';
 $style-italic: 'italic';

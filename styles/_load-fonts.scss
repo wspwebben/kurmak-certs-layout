@@ -8,8 +8,6 @@
 @use 'mixin';
 @use 'font';
 
-@function generateUrl($url, $extension: 'woff2') {
-  $dir: '../fonts/';
-
-  @return $dir + $url + '.' + $extension;
-}
+@include mixin.font(font.$epilogue, 'Epilogue/Regular');
+@include mixin.font(font.$inter, 'Inter/Regular');
+@include mixin.font(font.$inter, 'Inter/SemiBold', $weight: font.$weight-semibold);
