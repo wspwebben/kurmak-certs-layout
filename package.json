@@ -4,19 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url /kurmak-certs-layout"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wspwebben/sass-template.git"
+    "url": "git+https://github.com/wspwebben/kurmak-certs-layout.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wspwebben/sass-template/issues"
+    "url": "https://github.com/wspwebben/kurmak-certs-layout/issues"
   },
-  "homepage": "https://github.com/wspwebben/sass-template#readme",
+  "homepage": "https://github.com/wspwebben/kurmak-certs-layout#readme",
   "dependencies": {
     "parcel-bundler": "^1.12.4",
     "sass": "^1.32.4"
