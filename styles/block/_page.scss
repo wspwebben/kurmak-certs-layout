@@ -2,10 +2,13 @@
 @use '../font';
 
 .page {
+  --fontSize: 100%;
+  --lineHeight: 1.5;
+
   height: 100%;
   font-family: font.$primary;
-  font-size: 100%;
-  line-height: 1.5;
+  font-size: var(--fontSize);
+  line-height: var(--lineHeight);
   color: var(--color-text);
   background-color: var(--color-background);
   -moz-osx-font-smoothing: grayscale;

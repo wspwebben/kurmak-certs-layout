@@ -25,63 +25,77 @@
   }
   
   &__title {
+    --fontSize: 38px;
+    --lineHeight: 1;
+
     display: block;
     margin-top: 0;
     margin-bottom: 30px;
     font-family: font.$accent;
-    font-size: 38px;
-    line-height: 1;
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
     font-weight: font.$weight-normal;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     white-space: pre-line;
 
     @include mixin.media('tablet') {
+      --fontSize: 90px;
+      
       margin-bottom: 59px;
-      font-size: 90px;
     }
   }
 
   &__subtitle {
+    --fontSize: 16px;
+    --lineHeight: 1.2;
+    
     order: -1;
     margin-top: 0;
     margin-bottom: 15px;
     font-weight: font.$weight-normal;
-    text-transform: uppercase;
-    font-size: 16px;
-    line-height: 1.2;
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 
     @include mixin.media('tablet') {
+      --fontSize: 20px;
+      --lineHeight: 1.8
+
       margin-bottom: 30px;
-      font-size: 20px;
-      line-height: 1.8;
     }
   }
   
-  
   &__owner {
+    --fontSize: 24px;
+    --lineHeight: 1.16;
+
     display: block;
     margin-bottom: 15px;
-    font-size: 24px;
-    line-height: 1.16;
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
     font-weight: font.$weight-semibold;
     white-space: pre-line;
     
     @include mixin.media('tablet') {
+      --fontSize: 40px;
+      --lineHeight: 1.1;
+
       margin-bottom: 20px;
-      font-size: 40px;
-      line-height: 1.1;
     }
   }
   
   &__text {
+    --fontSize: inherit;
+
     margin: 0;
     font-weight: font.$weight-normal;
+    font-size: var(--fontSize);
+    line-height: var(--lineHeight);
     
     @include mixin.media('tablet') {
-      font-size: 20px;
-      line-height: 1.5;
+      --fontSize: 20px;
     }
   }
 
