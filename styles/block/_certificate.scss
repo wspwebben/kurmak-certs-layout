@@ -11,6 +11,8 @@
   }
   
   &__description {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 41px;
     
     @include mixin.media('tablet') {
@@ -32,6 +34,7 @@
   }
   
   &__pretitle {
+    order: -1;
     margin-top: 0;
     margin-bottom: 15px;
     font-weight: font.$weight-normal;
