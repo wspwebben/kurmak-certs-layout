@@ -67,14 +67,16 @@
     }
   }
   
-  &__subtitle {
+  &__owner {
     display: block;
+    margin-bottom: 15px;
     font-size: 24px;
     line-height: 1.16;
     font-weight: font.$weight-semibold;
     white-space: pre-line;
     
     @include mixin.media('tablet') {
+      margin-bottom: 20px;
       font-size: 40px;
       line-height: 1.1;
     }
